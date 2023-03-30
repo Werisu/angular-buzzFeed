@@ -1,0 +1,6 @@
+.modal-header{
+  background-color: #644ed2;
+}
+.modal-body *{
+  color: #000 !important;
+}
