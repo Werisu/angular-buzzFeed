@@ -9,5 +9,5 @@
 
 /* Reset do tamanho padrão da fonte */
 body {
-  background-color: #1f1147;
+  background-color: #1f1147 !important;
 }
