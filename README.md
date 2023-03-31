@@ -1,26 +1,28 @@
 # AngularBuzzFeed
 
+O Angular-BuzzFeed é um projeto feito em Angular que permite ao usuário selecionar respostas para uma série de perguntas e obter um resultado que descreve sua personalidade.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.2.
 
-## Development server
+## Recursos adicionais
+Para melhorar a aparência e a funcionalidade do projeto, foram adicionados os seguintes recursos:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+* Bootstrap
+* ngb-bootstrap
+* Fontawesome
 
-## Code scaffolding
+Também foi adicionada uma animação para apresentar o desenvolvedor.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Como executar o projeto
 
-## Build
+Para executar o projeto em sua máquina local, siga as etapas abaixo:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Certifique-se de que o Angular CLI esteja instalado em sua máquina.
+Clone este repositório em sua máquina usando o comando `git clone https://github.com/seu-usuario/Angular-BuzzFeed.git.`
+Navegue até o diretório do projeto usando o comando `cd Angular-BuzzFeed`.
+Instale as dependências do projeto usando o comando `npm install`.
+Inicie o servidor de desenvolvimento usando o comando `ng serve`.
+Abra um navegador e acesse `http://localhost:4200/` para visualizar o projeto em execução.
 
 ## Further help
 

@@ -3,7 +3,74 @@
   <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
 </div>
 <div class="modal-body">
-  <p>Eu sou {{ name }}!</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center align-items-center w-100">
+        <button *ngIf="!viewDev" class="btn btn-primary mt-2" (click)="viewDev = true" [@fadeIn]>Clique aqui 👋🏾</button>
+      </div>
+      <aside class="profile-card col-12" *ngIf="viewDev" [@fadeOut]>
+        <header>
+          <!-- here’s the avatar -->
+          <a target="_blank" href="#">
+            <img
+            src="https://avatars.githubusercontent.com/u/33838737?s=400&u=49b8fdc8bd86da0a8fffae20ba9f2047a2a58855&v=4"
+            width="50px" class="hoverZoomLink">
+          </a>
+          <button type="button" class="btn-close position-absolute" style="right: 10px;" aria-label="Close" (click)="viewDev = false"></button>
+
+          <!-- the username -->
+          <h1>
+            {{ name }}
+          </h1>
+
+          <!-- and role or location -->
+          <h2>
+            Desenvolvedor Angular
+          </h2>
+
+        </header>
+
+        <!-- bit of a bio; who are you? -->
+        <div class="profile-bio">
+
+          <p>
+            Formado em Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Tocantins. Com uma sólida
+            formação em Angular, Typescript e C#, me especializei como desenvolvedor Angular, tendo concluído uma
+            formação na Alura e atualmente cursando outra. Com muitos anos de experiência em desenvolvimento de software,
+            sou capaz de desenvolver soluções inovadoras e eficazes para atender às necessidades de meus clientes e
+            usuários finais. Com uma sólida ética de trabalho e habilidades de resolução de problemas, sou um
+            ativo valioso para qualquer equipe de desenvolvimento.
+          </p>
+
+        </div>
+
+        <!-- some social links to show off -->
+        <ul class="profile-social-links">
+          <li>
+            <a target="_blank" href="https://www.linkedin.com/in/wellyssonrocha-front-end/">
+              <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://github.com/Werisu">
+              <fa-icon [icon]="['fab', 'github']"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://www.instagram.com/opa_enjuru/">
+              <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://medium.com/@wr.ergon">
+
+              <fa-icon [icon]="['fab', 'medium']"></fa-icon>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </div>
 </div>
 <div class="modal-footer">
   <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Fechar</button>

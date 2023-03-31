@@ -8,6 +8,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterModule } from './components/footer/footer.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FooterModule } from './components/footer/footer.module';
     BrowserModule,
     AppRoutingModule,
     NgbTooltipModule,
-    FooterModule
+    FooterModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
